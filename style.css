@@ -1,0 +1,181 @@
+/* Reset CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    color: #fff;
+    text-align: center;
+    background: #000;
+    cursor: crosshair;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Disable Selection Styles */
+.disable-selection {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Custom Navbar Styles */
+.custom-navbar {
+    float: right;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    align-items: right;
+    z-index: 100;
+}
+
+.custom-navbar a {
+    position: relative;
+    cursor: crosshair;
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    right: 30px;
+    top: 13px;
+}
+
+/*underline*/
+.custom-navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.custom-navbar a:hover::after{
+    transform-origin:center;
+    transform: scaleX(1);
+}
+
+
+.custom-navbar a:hover {
+    color: grey;   
+}
+
+.custom-navbar a:active {
+    color: pink;
+}
+
+/*horizontal effect*/
+.custom-navbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, black, transparent);
+    backdrop-filter: blur(50px);
+    transition: .5s; 
+}
+
+.custom-navbar:hover::after{
+    left: 100%;
+    margin-right: 30px;
+}
+
+
+/* Content Styles */
+.content {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Home Section Styles */
+#home {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Section Styles */
+#about {
+    background-color: deeppink;
+}
+
+/* Works Section Styles */
+#works{
+    background-color: black;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: deeppink;
+}
+
+
+/* Header Styles */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+#container {
+    position: relative;
+    width: 100vh;
+    overflow: hidden;
+}
+
+/* City Canvas Styles */
+#city-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* H2 Styles */
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.logo{
+    height: 50px; 
+    width: 130px; 
+    float: left;
+    padding-left: 30px;
+}
