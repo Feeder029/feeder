@@ -164,6 +164,38 @@ header {
     z-index: 0;
 }
 
+/*h1 styles*/
+ h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Aclonica', sans-serif;
+}
+
+/*p styles*/
+p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*music button styles*/
+.fa-solid {
+    font-size: 30px;
+    color: #666;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover {
+    filter: brightness(50%);
+}
+
+.play-button {
+    font-size: 50px;
+    position: relative;
+    top: 3px;
+}
+
 /* H2 Styles */
 h2 {
     position: absolute;
